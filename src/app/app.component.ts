@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { of } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'rxjsLibrary';
+  constructor(){
+    let values = of("Melumatlar",25,"istifadeci",{name:"Elmar",password:12345},[1,2,3]);
+    values.subscribe(
+      data => {console.log(data);
+      }
+    )
+  }
 }

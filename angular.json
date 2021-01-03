@@ -127,5 +127,8 @@
       }
     }
   },
-  "defaultProject": "rxjsLibrary"
+  "defaultProject": "rxjsLibrary",
+  "cli": {
+    "analytics": "aee975f3-486b-4d58-8cfc-0c71ed4d4fab"
+  }
 }
